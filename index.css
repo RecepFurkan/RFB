@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+/*
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10rem;
+    background-color: black;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
+
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(./icon/orman.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.yazi{
+    color: #EFEFEF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    top: 11rem;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.img{
+    position: relative;
+    top: 20rem;
+    background-color: transparent;
+    border-radius: 18rem 18rem 20rem 20rem;
+    -webkit-border-radius: 18rem 18rem 20rem 20rem;
+    -moz-border-radius: 18rem 18rem 20rem 20rem;
+    -ms-border-radius: 18rem 18rem 20rem 20rem;
+    -o-border-radius: 18rem 18rem 20rem 20rem;
+    background-size: cover;
+    border: 0;
+    z-index: 111;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 0px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+#btn:hover,:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 0px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+}

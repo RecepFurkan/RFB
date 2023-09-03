@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit&display=swap');
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+*/
+
+
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10rem;
+    background-color: black;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
+
+.link-tik{
+    position:absolute; 
+    height:100%;
+    width:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #001221;
+}
+
+
+.ilt {
+    width: 40rem;
+    height: 35rem;
+    flex-shrink: 0;
+    border-radius: 2.0625rem;
+    background: #00182C;
+    -webkit-border-radius: 2.0625rem;
+    -moz-border-radius: 2.0625rem;
+    -ms-border-radius: 2.0625rem;
+    -o-border-radius: 2.0625rem;
+    position: relative;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    transition-property: width, height;
+    transition-duration: 500ms;
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+
+.ilt:hover {
+    width: 43rem;
+    height: 38rem;
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+
+
+
+
+
+.ilet{
+    width: 42rem;
+    height: 37rem;
+    flex-shrink: 0;
+    border-radius: 2.0625rem;
+    background: linear-gradient(131deg, #FF4700 25.72%, #F00 32.42%, #000AFF 49.78%, #FA00FF 50.78%, #BD02FF 62.43%, #70FF00 74.59%, #00F0FF 77.15%, #FFB800 84.09%, #F00 87.27%);
+}
+
+.bu{
+    position: relative;
+    top: 2rem;
+}
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+    position: relative;
+    top: 5rem;
+    left: 11rem;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+}
+
+  /* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+
+
+/*------------------------------------------*/
+
+
+.form__group-msg {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+    position: relative;
+    top: 5rem;
+    left: 11rem;
+}
+
+.form__field-msg {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field-msg::placeholder {
+    color: transparent;
+}
+
+.form__field-msg:placeholder-shown ~ .form__label-msg {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label-msg {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field-msg:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+}
+
+.form__field-msg:focus ~ .form__label-msg {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+}
+
+  /* reset input */
+.form__field-msg:required, .form__field-msg:invalid {
+    box-shadow: none;
+}
+
+
+
+
+
+#btn {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btn:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+}
+
+
+
+@media screen and (max-width: 476px){
+    .ilt{
+        width: 28rem;
+        height: 35rem;
+        flex-shrink: 0;
+        border-radius: 2.0625rem;
+        background: #00182C;
+        -webkit-border-radius: 2.0625rem;
+        -moz-border-radius: 2.0625rem;
+        -ms-border-radius: 2.0625rem;
+        -o-border-radius: 2.0625rem;
+        position: relative;
+        color: #FFF;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+    
+    .ilet{
+        width: 30rem;
+        height: 37rem;
+        flex-shrink: 0;
+        border-radius: 2.0625rem;
+        background: linear-gradient(131deg, #FF4700 25.72%, #F00 32.42%, #000AFF 49.78%, #FA00FF 50.78%, #BD02FF 62.43%, #70FF00 74.59%, #00F0FF 77.15%, #FFB800 84.09%, #F00 87.27%);
+    }
+
+    form{
+        position: relative;
+        left: 0rem;
+    }
+    .form__group-msg {
+        position: relative;
+        padding: 20px 0 0;
+        width: 100%;
+        max-width: 180px;
+        position: relative;
+        top: 5rem;
+        left: 0rem;
+    }
+    .form__group {
+        position: relative;
+        padding: 20px 0 0;
+        width: 100%;
+        max-width: 180px;
+        position: relative;
+        top: 5rem;
+        left: 0rem;
+    }
+
+    #btn {
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #ffffff80;
+        text-shadow: none;
+        background: transparent;
+        box-shadow: transparent;
+        border: 1px solid #ffffff80;
+        transition: 0.5s ease;
+        user-select: none;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .ilt {
+        width: 20rem;
+        height: 35rem;
+        flex-shrink: 0;
+        border-radius: 2.0625rem;
+        background: #00182C;
+        -webkit-border-radius: 2.0625rem;
+        -moz-border-radius: 2.0625rem;
+        -ms-border-radius: 2.0625rem;
+        -o-border-radius: 2.0625rem;
+        position: relative;
+        color: #FFF;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        transition-property: width, height;
+        transition-duration: 500ms;
+        position: relative;
+        top: -2px;
+        left: -2px;
+    }
+    .ilet{
+        width: 21rem;
+    }
+    
+    .ilt:hover {
+        width: 22rem;
+        height: 38rem;
+        position: relative;
+        top: -2px;
+        left: -2px;
+    }
+
+}
+
+
+
+
+
+
+
